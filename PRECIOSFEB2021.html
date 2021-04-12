@@ -1,0 +1,1322 @@
+<style>
+	.pricing_v2 {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-justify-content: center;
+		justify-content: center;
+		width: 100%;
+		margin: 0 auto 3em !important;
+        font-family: Muli;
+	}
+
+	.pricing-item_v2 {
+		position: relative;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		-webkit-align-items: stretch;
+		align-items: stretch;
+		text-align: center;
+		-webkit-flex: 0 1 150px;
+        flex: 1 1 140px;
+        max-width: 140px;
+        margin-bottom: 20px;
+
+	}
+    .sombra{
+        box-shadow: -8px 0 8px -8px #333;
+    }
+    .pricing-item_desc {
+		position: relative;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		-webkit-align-items: stretch;
+		align-items: stretch;
+		text-align: center;
+		-webkit-flex: 0 1 140px;
+		flex: 0 1 140px;
+	}
+
+    .no_margin{
+        margin: 0px !important;
+    }
+
+    .title{
+        background-color: #00aaff;
+        color:#fff;
+        padding-top: 1em !important;
+        padding-bottom: 1em !important;
+        font-size: 13px;
+        height: 115px;
+        margin: 0px !important;
+    }
+
+    .title_cont{
+        background-color: #0088cc;
+        color:#fff;
+        padding-top: 1em !important;
+        padding-bottom: 1em !important;
+        font-size: 13px;
+        height: 115px;
+        margin: 0px !important;
+    }
+
+
+    .cost_title{
+        font-size: 19px;
+        font-weight: bold;
+    }
+
+    .sub_cost{
+        font-size: 15px;
+    }
+
+    .desc_title{
+        font-size: 10px;
+    }
+
+    .checklist{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .item_obj1
+    {
+        width: 100%;
+        font-size: 11px;
+        margin: 0px 0px 0px 0px !important;
+        padding: 5px 0px 5px 0px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+        background-color:#fff;
+    }
+
+    .item_obj2
+    {
+        background-color: #f1f4f9;
+        width: 100%;
+        font-size: 11px;
+        margin: 0px 0px 0px 0px !important;
+        padding: 5px 0px 5px 0px;
+        height: 25px;
+        display: flex;
+        align-items: center;
+    }
+
+    .center_obj{
+        justify-content: center;
+    }
+
+    .cost{
+        background-color: #f1f4f9;
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+        height: 85px;
+    }
+
+    .pagalo_cta{
+        cursor: pointer;
+        font-size: 12px !important;
+        text-decoration-line: underline;
+        color: #000;
+        margin-bottom: 10px;
+        margin-top: 11px !important;
+    }
+    .pagalo_cta:hover{
+        cursor: pointer;
+        font-size: 13px !important;
+        text-decoration-line: underline;
+        color: #000 !important;
+        margin-bottom: 10px;
+        margin-top: 12px !important;
+    }
+
+
+    .cta_a{
+        background: #97bf19;
+        box-shadow: inset 0 1px 0 #fff, 0px 4px 0 #81af00, 1px 6px 6px 3px rgba(0, 0, 0, 0);
+        color: #fff;
+        padding: 7px 15px 7px 15px;
+        border-radius: 10px;
+        margin: 15px 0px 15px 0px !important;
+        font-size: 10px;
+        direction: none;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight:bold;
+    }
+
+    .cta_a:hover{
+        background: #81af00;
+        box-shadow: inset 0 1px 0 #fff, 0px 4px 0 #81af00, 1px 6px 6px 3px rgba(0, 0, 0, 0);
+        color: #fff;
+        padding: 7px 15px 7px 15px;
+        border-radius: 10px;
+        margin: 15px 0px 15px 0px !important;
+        font-size: 10px;
+        direction: none;
+        text-decoration: none;
+        cursor: pointer;
+        font-weight:bold;
+    }
+    .cost_desc{
+        font-size: 10px;
+        font-weight: bold;
+        color:#747474;
+        margin-top: 12px !important;
+        margin-bottom: 10px !important;
+
+    }
+
+    .details{
+        border-style: solid none solid solid;
+        border-color:#00aaff;
+        border-radius: 30px 0px 0px 30px;
+        display: flex;
+        align-items: center;
+        /* justify-content: left; */
+        flex-direction: column;
+        min-width: 165px;
+    }
+
+    .borde_n_f{
+        border-style: none none solid solid;
+        border-color:#ffa532;
+    }
+    .borde_n_r{
+        border-style: none solid solid none;
+        border-color:#ffa532;
+    }
+    .border_b{
+        border-style: none none solid none;
+        border-color:#ffa532;
+    }
+
+    .head_item{
+        height: 25px;
+        border-style: solid;
+        border-color:#ffa532;
+        background-color: #ffa532;
+        color:#fff;
+        font-family: Muli Black;
+
+    }
+
+    .head_item_cont{
+        height: 25px;
+        border-style: solid;
+        border-color:#0067BC;
+        background-color: #0067BC;
+        color:#fff;
+        font-family: Muli Black;
+    }
+
+    @media only screen and (max-width: 830px) {
+        .pricing-item_v2 {
+            border-style: solid !important;
+            border-radius: 0px !important;
+            border-color: #ffa532;
+            margin: 5px;
+        }
+
+        .br_cont{
+            border-color: #0067BC !important;
+            margin-left: 10px;
+        }
+        .head_item{
+            border-radius: 0px !important;
+            border-style: none;
+            color:#ffa532;
+
+        }
+
+        .head_item_cont{
+            border-radius: 0px !important;
+            border-style: none;
+            color:#0067BC;
+        }
+
+        .borde_n_r{
+            border-radius: 0px;
+            border-style:none;
+        }
+        .borde_n_f{
+            border-radius: 00px;
+            border-style:none;
+        }
+
+
+    }
+
+
+</style>
+</div><style>
+	.pricing {
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		flex-wrap: wrap;
+		-webkit-justify-content: center;
+		justify-content: center;
+		width: 100%;
+		margin: 0 auto 3em;
+	}
+
+	.pricing-item {
+		position: relative;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+		-webkit-align-items: stretch;
+		align-items: stretch;
+		text-align: center;
+		-webkit-flex: 0 1 255px;
+		flex: 0 1 255px;
+	}
+
+	.pricing-action {
+		color: inherit;
+		border: none;
+		background: none;
+		font-family: Muli;
+		font-size: 0.9em;
+		text-decoration: none;
+	}
+
+	.pricing-action:focus {
+		outline: none;
+	}
+
+	.pricing-feature-list {
+		text-align: left;
+	}
+
+	.pricing-palden .pricing-item {
+		font-family: 'Muli';
+		cursor: default;
+		color: #d6d6d6;
+		background: #fff;
+		box-shadow: 0 0 10px rgba(46, 59, 125, 0.23);
+		border-radius: 20px 20px 10px 10px;
+		margin: 1em;
+	}
+	#pricingPayu span, #pricingPayuMob span,
+	#payPremium span, #payPremiumMob span,
+	#payEmprendedor span, #payEmprendedorMob span,
+	#payProfIndep span, #payProfIndepMob span {
+		color: black;
+		text-decoration: underline;
+		cursor: pointer;
+	}
+
+	#pricingPayu span:hover, #pricingPayuMob span:hover,
+	#payPremium span:hover, #payPremiumMob span:hover,
+	#payEmprendedor span:hover, #payEmprendedorMob span:hover,
+	#payProfIndep span:hover, #payProfIndepMob span:hover {
+		font-weight: bold;
+	}
+
+	@media screen and (min-width: 66.25em) {
+		.pricing-palden .pricing-item {
+			margin: 1em 0.0001em 0 0;
+		}
+
+		.pricing-palden .pricing__item--featured {
+			margin: 0;
+			z-index: 10;
+			/*box-shadow: 0 0 20px rgba(255, 144, 0, 1);*/
+			border-radius: 16px 16px 10px 10px;
+			border: 3px solid #ff9000;
+		}
+
+		.pricing-palden .contador {
+			margin: 1em 1em 0 0;
+			z-index: 10;
+			/*box-shadow: 0 0 20px rgba(0, 136, 204, 1);*/
+			border-radius: 16px 16px 10px 10px;
+			border: 3px solid #0088cc;
+		}
+
+		.pricing-palden .empresa0 {
+			z-index: 10;
+			/*box-shadow: 0 0 20px rgba(255, 144, 0, 1);*/
+			border-radius: 16px 0px 0px 10px;
+			border-top: 3px;
+			border-right: 0px;
+			border-bottom: 3px;
+			border-left: 3px;
+			border-color: #ff9000;
+			border-style: solid;
+		}
+
+		.pricing-palden .empresa1, .pricing-palden .empresa2 {
+			z-index: 10;
+			border-radius: 0px;
+			border-top: 3px;
+			border-right: 0px;
+			border-bottom: 3px;
+			border-left: 0px;
+			border-color: #ff9000;
+			border-style: solid;
+		}
+
+		.pricing-palden .empresa3 {
+			z-index: 10;
+			/*box-shadow: 0 0 20px rgba(255, 144, 0, 1);*/
+			border-radius: 0px 16px 10px 0px;
+			border-top: 3px;
+			border-right: 3px;
+			border-bottom: 3px;
+			border-left: 0px;
+			border-color: #ff9000;
+			border-style: solid;
+		}
+	}
+
+	@media screen and (max-width: 641px) {
+		.pricing-palden.desk .prod-desc-line .pricing-item.last-featured .prod-desc:before {
+			left: 15% !important;
+		}
+
+		.pricing-palden.desk .prod-desc-line .pricing-item.last-featured .prod-desc:after {
+			right: 15% !important;
+		}
+
+		.pricing-palden.mobile .prod-desc-line .pricing-item.last-featured .pricing-title-one.destaca:before {
+			left: 15% !important;
+		}
+
+		.pricing-palden.mobile .prod-desc-line .pricing-item.last-featured .pricing-title-one.destaca:after {
+			right: 15% !important;
+		}
+
+		.pricing-palden .pricing-action {
+			padding: 0.5em 1em;
+		}
+	}
+
+	.pricing-palden .pricing__item--featured {
+		margin: 0;
+		z-index: 10;
+		/*box-shadow: 0 0 20px rgba(255, 144, 0, 1);*/
+		border-radius: 16px 16px 10px 10px;
+		border: 3px solid #ff9000;
+	}
+
+	.pricing-palden .contador-m {
+		margin: 0;
+		z-index: 10;
+		/*box-shadow: 0 0 20px rgba(255, 144, 0, 1);*/
+		border-radius: 16px 16px 10px 10px;
+		border: 3px solid #0088cc;
+	}
+
+	.pricing-palden .pricing__item--featured .pricing-title-one {
+		padding-top: 1em;
+		line-height: 1.5em;
+	}
+
+	.pricing-palden .prod-desc-line {
+		clear: both;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+
+	.pricing-palden .prod-desc-line .pricing-item {
+		background: transparent;
+		box-shadow: none;
+		border-radius: 0px;
+		align-self: flex-end;
+		margin: 0 0 1em 0;
+	}
+
+	.pricing-palden .prod-desc-line .pricing-item.tit-empresa0 {
+		margin: -1em 0 0 0;
+		background: rgba(255, 144, 0, 1);
+		border-radius: 8px 0px 0px 0px;
+		font-weight: bold;
+		color: #ffffff;
+		text-align: right;
+	}
+	.pricing-palden .prod-desc-line .pricing-item.tit-empresa1 {
+		margin: -1em 0 0 0;
+		background: rgba(255, 144, 0, 1);
+		border-radius: 0px;
+		font-weight: bold;
+		color: #ffffff;
+		text-align: right;
+	}
+
+	.pricing-palden .prod-desc-line .pricing-item.tit-empresa2 {
+		margin: -1em 0 0 0;
+		background: rgba(255, 144, 0, 1);
+		border-radius: 0px;
+		font-weight: bold;
+		color: #ffffff;
+		text-align: left;
+	}
+	.pricing-palden .prod-desc-line .pricing-item.tit-empresa3 {
+		margin: -1em 0 0 0;
+		background: rgba(255, 144, 0, 1);
+		border-radius: 0px 8px 0px 0px;
+		font-weight: bold;
+		color: #ffffff;
+		text-align: left;
+	}
+
+	.pricing-palden .contador .prod-desc-line .pricing-item.descr {
+		margin: -1em 0 0 0;
+		background: rgba(0, 136, 204, 1);
+		border-radius: 8px 8px 0px 0px;
+		font-weight: bold;
+		color: #ffffff;
+	}
+
+	.pricing-palden .contador .prod-desc-line .pricing-item.descr {
+		margin: -1em 0 0 0;
+		background: rgba(0, 136, 204, 1);
+		border-radius: 8px 8px 0px 0px;
+		font-weight: bold;
+		color: #ffffff;
+	}
+
+	.empresa2 .pricing-title-one {
+		position: relative;
+	}
+
+	.pricing-title-one.destaca {
+		position: relative;
+	}
+
+	.pricing-palden .prod-desc-line .pricing-item.descr .prod-desc {
+		padding: 5px 0 5px 0;
+		letter-spacing: 1px;
+		font-size: 1em;
+	}
+
+	.pricing-palden.mobile .prod-desc-line .pricing-item.descr {
+		margin: -1em 0 0 0;
+		background: rgba(255, 144, 0, 1);
+		border-radius: 8px 8px 0px 0px;
+		font-weight: bold;
+		color: #ffffff;
+	}
+
+	.pricing-palden.mobile .contador-m .prod-desc-line .pricing-item.descr {
+		margin: -1em 0 0 0;
+		background: rgba(0, 136, 204, 1);
+		border-radius: 8px 8px 0px 0px;
+		border: 3px solid #0088cc;
+		font-weight: bold;
+		color: #ffffff;
+	}
+	.pricing-palden .contador .prod-desc-line .pricing-item.descr .prod-desc {
+		padding: 5px 0 5px 0;
+		letter-spacing: 1px;
+		font-size: 1em;
+	}
+	.contador .pricing-deco.fe {
+		background: rgba(0, 136, 204, 0.99) !important;
+	}
+	.pricing-palden .pricing-deco {
+		border-radius: 12px 12px 0px 0px;
+		background: rgba(0, 170, 255, 0.99);
+		padding: 1em 0 5em;
+		position: relative;
+	}
+	.pricing-palden .empresa0 .pricing-deco {
+		border-radius: 12px 0px 0px;
+	}
+	.pricing-palden .empresa3 .pricing-deco {
+		border-radius: 0px 12px 0px 0px;
+	}
+	.pricing-palden .pricing-deco-img {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100px;
+	}
+
+	.pricing-palden .pricing-title-one {
+		font-size: 0.800em;
+		margin: 0;
+		padding-bottom: 0;
+		letter-spacing: 1.5px;
+		color: #fff;
+	}
+
+	.pricing-palden .pricing-title-one span {
+		font-size: 0.692em;
+		font-weight: normal;
+		letter-spacing: 1px;
+		opacity: 0.8;
+		filter: Alpha(opacity=80);
+	}
+
+	.pricing-palden .pricing-title-two {
+		font-size: 1em;
+		margin: 15px 0 0;
+		letter-spacing: 1.5px;
+		color: #fff;
+		font-weight: normal;
+	}
+
+	.pricing-palden .pricing-title {
+		margin: 0.1em 0;
+	}
+
+	.pricing-palden .pricing-title span {
+		margin: 0;
+		letter-spacing: 1px;
+		color: #fff;
+		background: #FFAD00;
+		padding: 0.1em 0.6em;
+		border-radius: 25px;
+	}
+
+	.pricing-palden .deco-layer {
+		-webkit-transition: -webkit-transform 0.5s;
+		transition: transform 0.5s;
+	}
+
+	.pricing-palden .pricing-item:hover .deco-layer--1 {
+		-webkit-transform: translate3d(15px, 0, 0);
+		transform: translate3d(15px, 0, 0);
+	}
+
+	.pricing-palden .pricing-item:hover .deco-layer--2 {
+		-webkit-transform: translate3d(-15px, 0, 0);
+		transform: translate3d(-15px, 0, 0);
+	}
+
+	.pricing-palden .icon {
+		font-size: 2.846em;
+	}
+
+	.pricing-palden .pricing-price {
+		font-size: 1.846em;
+		font-weight: bold;
+		padding: 0;
+		color: #fff;
+		margin: 0.4em 0 0.1em 0;
+		line-height: 0.75;
+	}
+
+	.pricing-palden .pricing-item.fe .pricing-price {
+		margin: 0.5em 0 0 0;
+	}
+
+	.pricing-palden .pricing-item.fe .pricing-title-one {
+		margin-bottom: 0;
+		margin-top: 0.5em;
+		line-height: 1.5em;
+	}
+
+	.pricing-palden .pricing-item.fepro .pricing-price {
+		margin: 0.9em 0 0.1em 0;
+	}
+
+	.pricing-palden .pricing-currency {
+		font-size: 0.538em;
+		vertical-align: top;
+	}
+
+	.pricing-palden .pricing-period {
+		font-size: 0.538em;
+		font-style: italic;
+	}
+
+	.pricing-palden .pricing-period span {
+		font-style: normal;
+	}
+
+	.strikethrough {
+		position: relative;
+	}
+
+	.strikethrough:before {
+		position: absolute;
+		content: "";
+		left: 0;
+		top: 50%;
+		right: 0;
+		border-top: 1px solid;
+		border-color: #FE0000;
+		-webkit-transform: rotate(-4deg);
+		-moz-transform: rotate(-4deg);
+		-ms-transform: rotate(-4deg);
+		-o-transform: rotate(-4deg);
+		transform: rotate(-4deg);
+	}
+
+	.pricing-palden .pricing-price-total {
+		font-size: 1em;
+		font-weight: normal;
+		padding: 0;
+		color: #fff;
+		margin: 1.7em 0 0.25em 0;
+		line-height: 0.75;
+		opacity: 0.8;
+		filter: Alpha(opacity=80);
+	}
+
+	.pricing-palden .pricing-price-total .pricing-currency {
+		font-size: 0.692em;
+		vertical-align: top;
+	}
+
+	.pricing-palden .pricing-price-total .pricing-period {
+		font-size: 1.154em;
+	}
+
+	.pricing-palden .pricing__sentence {
+		font-weight: bold;
+		margin: 0 0 1em 0;
+		padding: 0 0 0.5em;
+	}
+
+	.pricing-palden .pricing-feature-list {
+		margin: 0;
+		padding: 0.25em 0 0.5em;
+		list-style: none;
+		text-align: center;
+	}
+
+	.pricing-palden .pricing-feature {
+		padding: 0 0 0.4em 0;
+		text-align: left;
+		margin-left: 10%;
+		font-size: 0.87em;
+	}
+
+	.pricing-palden .pricing-feature.star {
+		list-style-image: url(https://www.siigo.com/wp-content/uploads/2018/10/estrella.png);
+		color: #00AAFF;
+		font-weight: bold;
+	}
+
+	.pricing-palden .pricing-feature.ppal {
+		list-style-image: url(https://www.siigo.com/wp-content/uploads/2018/10/check.png);
+		color: #84697c;
+	}
+
+	.pricing-palden .pricing-feature span.txt {
+		color: #00AAFF;
+	}
+
+	.pricing-palden .pricing-feature.subtit {
+		color: #00AAFF;
+		padding: 0 0 1em 0;
+		text-align: center;
+		margin-left: 0;
+		font-size: 0.923em;
+	}
+
+	.pricing-palden .pricing-feature.usu {
+		padding: 1em 0;
+		margin-left: 0;
+		text-align: center;
+		color: #84697c;
+	}
+
+	.pricing-palden .pricing-feature.benef {
+		padding: 0 0 1em 0;
+	}
+
+	.pricing-palden .pricing-action {
+		font-weight: bold;
+		margin: auto 4em 1em 4em;
+		padding: 0.5em 0.5em;
+		color: #fff;
+		border-radius: 10px;
+		background: #97bf19;
+		box-shadow: inset 0 1px 0 #fff, 0px 4px 0 #81af00, 1px 6px 6px 3px rgba(0, 0, 0, 0);
+		-webkit-transition: background-color 0.3s;
+		transition: background-color 0.3s;
+		cursor: pointer;
+	}
+
+	.pricing-palden .pricing-action:hover,
+	.pricing-palden .pricing-action:focus {
+		background-color: #81af00;
+	}
+
+	.pricing-palden .pricing-item--featured .pricing-deco {
+		padding: 5em 0 8.885em 0;
+	}
+	.tit-empresa0 {
+		margin: -1em 0 0 0;
+		background: rgba(255, 144, 0, 1);
+		border-radius: 8px 0px 0px 0px;
+		font-weight: bold;
+		color: #ffffff;
+	}
+	.tit-empresa1 {
+		margin: -1em 0 0 0;
+		background: rgba(255, 144, 0, 1);
+		border-radius: 0px;
+		font-weight: bold;
+		color: #ffffff;
+	}
+
+	.tit-empresa2 {
+		margin: -1em 0 0 0;
+		background: rgba(255, 144, 0, 1);
+		font-weight: bold;
+		color: #ffffff;
+	}
+
+	.tit-empresa0 span,
+	.tit-empresa1 span,
+	.tit-empresa2 span,
+	.tit-empresa3 span {
+		padding: 5px 0 5px 0;
+		letter-spacing: 1px;
+		font-size: 0.867em;
+	}
+
+	.contador .usuario,
+	.empresa0 .usuario,
+	.empresa1 .usuario,
+	.empresa2 .usuario {
+		margin: auto 0 20px 0;
+		padding: 0;
+	}
+
+	.contador .usuario .usu,
+	.empresa0 .usuario .usu,
+	.empresa1 .usuario .usu,
+	.empresa2 .usuario .usu {
+		padding: 0;
+	}
+
+	.contador .pricing-action,
+	.empresa0 .pricing-action,
+	.empresa1 .pricing-action,
+	.empresa2 .pricing-action {
+		margin-top: 0px;
+	}
+
+	.pricing-palden.mobile .pricing-item {
+		margin: 1em 0;
+	}
+
+	.toggplanes.fusion-accordian .fusion-toggle-icon-unboxed .panel-heading .fusion-toggle-icon-wrapper {
+		border-radius: 50%;
+		border: 1px solid #00aaff;
+		padding: 0 4px 0;
+	}
+
+	.toggplanes.fusion-accordian .fusion-panel.fusion-toggle-no-divider .panel-title a {
+		padding: 0 0 0 10px;
+	}
+
+	.toggplanes.fusion-accordian .panel-title .fusion-toggle-heading {
+		margin-left: 7px;
+		color: #ff9000;
+		font-weight: bolder;
+	}
+	.res-desk-not {
+		display: none !important;
+	}
+	@media (min-width: 641px) and (max-width: 1301px) {
+		.res-desk-yes {
+			display: none !important;
+		}
+		.res-desk-not {
+			display: block !important;
+		}
+		.res-desk-not .pricing-item {
+			text-align: center !important;
+		}
+		.pricing-palden .prod-desc-line .pricing-item.tit-empresa0, .pricing-palden .prod-desc-line .pricing-item.tit-empresa1, .pricing-palden .prod-desc-line .pricing-item.tit-empresa2, .pricing-palden .prod-desc-line .pricing-item.tit-empresa3 {
+			border-radius: 8px 8px 0 0;
+		}
+		.pricing-palden .contador {
+			border-radius: 16px 16px 10px 10px;
+			border: 3px solid #0088cc;
+		}
+		.pricing-palden .empresa0, .pricing-palden .empresa1, .pricing-palden .empresa2, .pricing-palden .empresa3 {
+			border-radius: 16px 16px 10px 10px;
+			border: 3px solid #ff9000;
+		}
+		.pricing-palden .contador .pricing-deco, .pricing-palden .empresa0 .pricing-deco, .pricing-palden .empresa1 .pricing-deco, .pricing-palden .empresa2 .pricing-deco, .pricing-palden .empresa3 .pricing-deco {
+			border-radius: 12px 12px 0px 0px;
+		}
+	}
+</style>
+<div class="pricing_v2" style="padding: 10px;">
+
+
+<div class="pricing-item_v2">
+    <div style="border-radius: 30px 0px 0px 0px;" class="head_item"></div>
+    <div class="sombra borde_n_f">
+        <div class="title">
+            <p class="no_margin">FACTURACIÓN</p>
+            <p class="no_margin">ELECTRÓNICA</p>
+            <p class="no_margin cost_title">GRATIS</p>
+        </div>
+        <div class="checklist">
+
+            <p class="item_obj1 center_obj">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"><g><rect fill="none" id="canvas_background" height="17" width="17" y="-1" x="-1"></rect></g><g><polygon stroke="null" id="svg_3" fill="#00ff00" points="12.516685485839844,3.62435245513916 7.298151016235352,12.381834030151367 6.258443832397461,14.133319854736328 2.4833145141601562,7.164612770080566 3.9065895080566406,4.5373029708862305 6.319074630737305,8.99062728881836 7.298151016235352,7.3509321212768555 11.164154052734375,0.8666791915893555 "></polygon></g></svg>
+                   5 Facturas anuales</p>
+            <p class="item_obj2 center_obj">
+                
+            </p>
+            <p class="item_obj1 center_obj"></p>
+            <p class="item_obj2 center_obj"></p>
+            <p class="item_obj1 center_obj"></p>
+            <p class="item_obj2 center_obj"></p>
+            <p class="item_obj1 center_obj"></p>
+            <p class="item_obj2 center_obj"></p>
+
+        </div>
+        <div class="cost">
+            <p class="cost_desc">1 Usuario</p>
+            <a class="cta_a " href="https://www.siigo.com/facturacion-electronica/?ppc=1&medio_virtual=Pagina%20Web&utm_medium=Pagina%20Web&utm_source=BotonPlanes%20TestABHome&utm_campaign=FacturacionElectronica%20PlanesHomeA&utm_content=BotonFacturacionElectronica" target="_blank">Empieza a usarlo
+                <i class="fas fa-arrow-right"></i>
+            </a>
+
+        </div>
+    </div>
+</div>
+<div class="pricing-item_v2 border_b">
+    <div style="text-align: left;" class="head_item"></div>
+    <div class="sombra">
+        <div class="title">
+            <p class="no_margin">FACTURACIÓN</p>
+            <p class="no_margin">ELECTRÓNICA</p>
+            <p class="no_margin cost_title">$15.000 <span class="sub_cost">/mes</span></p>
+            <p class="no_margin ">$180.000</p>
+            <p class="no_margin desc_title">Pago anual</p>
+        </div>
+        <div class="checklist">
+
+            <p class="item_obj1 center_obj"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"><g><rect fill="none" id="canvas_background" height="17" width="17" y="-1" x="-1"></rect></g><g><polygon stroke="null" id="svg_3" fill="#00ff00" points="12.516685485839844,3.62435245513916 7.298151016235352,12.381834030151367 6.258443832397461,14.133319854736328 2.4833145141601562,7.164612770080566 3.9065895080566406,4.5373029708862305 6.319074630737305,8.99062728881836 7.298151016235352,7.3509321212768555 11.164154052734375,0.8666791915893555 "></polygon></g></svg>
+            80 Facturas anuales
+            </p>
+            <p class="item_obj2 center_obj">
+               
+            </p>
+            <p class="item_obj1 center_obj"></p>
+            <p class="item_obj2 center_obj"></p>
+            <p class="item_obj1 center_obj"></p>
+            <p class="item_obj2 center_obj"></p>
+            <p class="item_obj1 center_obj"></p>
+            <p class="item_obj2 center_obj"></p>
+
+        </div>
+        <div class="cost">
+            <p class="cost_desc">1 Usuario</p>
+            <a id="btnfactpro" class="cta_a  formtestab pricesButtonNube">Más información
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <div style="padding-top:16px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+                    <g>
+                    <rect fill="none" id="canvas_background" height="15" width="15" y="-1" x="-1"></rect>
+                    </g>
+                    <g>
+                    <title>Layer 1</title>
+                    <g stroke="null" id="svg_1">
+                    <polygon stroke="null" id="svg_2" fill="#FFCD00" points="9.47338879108429,3.9683990478515625 6.5102540254592896,3.3260040283203125 5.0000001192092896,0.6299285292625427 5.0000001192092896,8.100692749023438 7.7646485567092896,9.370071411132812 7.4437257051467896,6.27691650390625 "></polygon>
+                    <polygon stroke="null" id="svg_3" fill="#FFDA44" points="3.489700436592102,3.3260040283203125 0.526611328125,3.9683990478515625 2.5562440156936646,6.27691650390625 2.2353516817092896,9.370071411132812 5.0000001192092896,8.100692749023438 5.0000001192092896,0.6299285292625427 "></polygon>
+                    </g>
+                </g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+                    <g>
+                    <rect fill="none" id="canvas_background" height="15" width="15" y="-1" x="-1"></rect>
+                    </g>
+                    <g>
+                    <title>Layer 1</title>
+                    <g stroke="null" id="svg_1">
+                    <polygon stroke="null" id="svg_2" fill="#FFCD00" points="9.47338879108429,3.9683990478515625 6.5102540254592896,3.3260040283203125 5.0000001192092896,0.6299285292625427 5.0000001192092896,8.100692749023438 7.7646485567092896,9.370071411132812 7.4437257051467896,6.27691650390625 "></polygon>
+                    <polygon stroke="null" id="svg_3" fill="#FFDA44" points="3.489700436592102,3.3260040283203125 0.526611328125,3.9683990478515625 2.5562440156936646,6.27691650390625 2.2353516817092896,9.370071411132812 5.0000001192092896,8.100692749023438 5.0000001192092896,0.6299285292625427 "></polygon>
+                    </g>
+                </g></svg>
+                
+            </div>
+            
+            <!-- <p id="payProfFactIli" class="cost_desc pagalo_cta">o págalo ahora</p> -->
+        </div>
+    </div>
+</div>
+
+<div class="pricing-item_v2 border_b">
+    <div style="text-align: right;" class="head_item"></div>
+    <div class="sombra">
+        <div class="title">
+            <p class="no_margin">FACTURACIÓN</p>
+            <p class="no_margin">ELECTRÓNICA</p>
+            <p class="no_margin cost_title">$29.000 <span class="sub_cost">/mes</span></p>
+            <p class="no_margin ">$350.000</p>
+            <p class="no_margin desc_title">Pago anual</p>
+        </div>
+        <div class="checklist">
+
+            <p class="item_obj1 center_obj"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"><g><rect fill="none" id="canvas_background" height="17" width="17" y="-1" x="-1"></rect></g><g><polygon stroke="null" id="svg_3" fill="#00ff00" points="12.516685485839844,3.62435245513916 7.298151016235352,12.381834030151367 6.258443832397461,14.133319854736328 2.4833145141601562,7.164612770080566 3.9065895080566406,4.5373029708862305 6.319074630737305,8.99062728881836 7.298151016235352,7.3509321212768555 11.164154052734375,0.8666791915893555 "></polygon></g></svg>
+            260 Facturas anuales
+            </p>
+            <p class="item_obj2 center_obj">
+                Siigo App
+            </p>
+            <p class="item_obj1 center_obj"></p>
+            <p class="item_obj2 center_obj"></p>
+            <p class="item_obj1 center_obj"></p>
+            <p class="item_obj2 center_obj"></p>
+            <p class="item_obj1 center_obj"></p>
+            <p class="item_obj2 center_obj"></p>
+
+        </div>
+        <div class="cost">
+            <p class="cost_desc">2 Usuarios</p>
+            <a id="btnfactpro350" class="cta_a  formtestab pricesButtonNube">Más información
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <div style="padding-top:16px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+                    <g>
+                    <rect fill="none" id="canvas_background" height="15" width="15" y="-1" x="-1"></rect>
+                    </g>
+                    <g>
+                    <title>Layer 1</title>
+                    <g stroke="null" id="svg_1">
+                    <polygon stroke="null" id="svg_2" fill="#FFCD00" points="9.47338879108429,3.9683990478515625 6.5102540254592896,3.3260040283203125 5.0000001192092896,0.6299285292625427 5.0000001192092896,8.100692749023438 7.7646485567092896,9.370071411132812 7.4437257051467896,6.27691650390625 "></polygon>
+                    <polygon stroke="null" id="svg_3" fill="#FFDA44" points="3.489700436592102,3.3260040283203125 0.526611328125,3.9683990478515625 2.5562440156936646,6.27691650390625 2.2353516817092896,9.370071411132812 5.0000001192092896,8.100692749023438 5.0000001192092896,0.6299285292625427 "></polygon>
+                    </g>
+                </g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+                    <g>
+                    <rect fill="none" id="canvas_background" height="15" width="15" y="-1" x="-1"></rect>
+                    </g>
+                    <g>
+                    <title>Layer 1</title>
+                    <g stroke="null" id="svg_1">
+                    <polygon stroke="null" id="svg_2" fill="#FFCD00" points="9.47338879108429,3.9683990478515625 6.5102540254592896,3.3260040283203125 5.0000001192092896,0.6299285292625427 5.0000001192092896,8.100692749023438 7.7646485567092896,9.370071411132812 7.4437257051467896,6.27691650390625 "></polygon>
+                    <polygon stroke="null" id="svg_3" fill="#FFDA44" points="3.489700436592102,3.3260040283203125 0.526611328125,3.9683990478515625 2.5562440156936646,6.27691650390625 2.2353516817092896,9.370071411132812 5.0000001192092896,8.100692749023438 5.0000001192092896,0.6299285292625427 "></polygon>
+                    </g>
+                </g></svg>
+                
+            </div>
+            
+            <!-- <p id="payProfFactIli" class="cost_desc pagalo_cta">o págalo ahora</p> -->
+        </div>
+    </div>
+</div>
+<div class="pricing-item_v2 border_b">
+    <div style="text-align: center;" class="head_item">SIIGO NUBE</div>
+    <div class="sombra ">
+        <div class="title">
+            <p class="no_margin">LITE</p>
+            <p class="no_margin" style="padding-bottom: 16px;"></p>
+            <p class="no_margin cost_title">$65.000 <span class="sub_cost">/mes</span></p>
+            <p class="no_margin ">$780.000</p>
+            <p class="no_margin desc_title">Pago anual</p>
+        </div>
+        <div class="checklist">
+
+            <p class="item_obj1 center_obj"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"><g><rect fill="none" id="canvas_background" height="17" width="17" y="-1" x="-1"></rect></g><g><polygon stroke="null" id="svg_3" fill="#00ff00" points="12.516685485839844,3.62435245513916 7.298151016235352,12.381834030151367 6.258443832397461,14.133319854736328 2.4833145141601562,7.164612770080566 3.9065895080566406,4.5373029708862305 6.319074630737305,8.99062728881836 7.298151016235352,7.3509321212768555 11.164154052734375,0.8666791915893555 "></polygon></g></svg>
+                340 Facturas ilimitadas
+            </p>
+            <p class="item_obj2 center_obj">
+                Cotizaciones / CRM
+            </p>
+            <p class="item_obj1 center_obj">
+                Cartera / Seguimientos de cobranza
+            </p>
+            <p class="item_obj2 center_obj">
+                Gastos / Cuentas por pagar
+            </p>
+            <p class="item_obj1 center_obj">
+                Siigo App
+            </p>
+            <p class="item_obj2 center_obj">
+                
+            </p>
+            <p class="item_obj1 center_obj"></p>
+            <p class="item_obj2 center_obj"></p>
+
+        </div>
+        <div class="cost">
+            <p class="cost_desc">1 Usuario</p>
+            <a id="btnprofIndep" class="cta_a formtestab">Más información
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <!-- <p id="payProfIndep" class="cost_desc pagalo_cta">o págalo ahora</p> -->
+        </div>
+    </div>
+</div>
+<div class="pricing-item_v2 border_b">
+    <div style="text-align: left;" class="head_item"></div>
+    <div class="sombra ">
+        <div class="title">
+            <p class="no_margin">PROFESIONAL</p>
+            <p class="no_margin">INDEPENDIENTE</p>
+            <p class="no_margin cost_title">$105.000 <span class="sub_cost">/mes</span></p>
+            <p class="no_margin ">$1.260.000</p>
+            <p class="no_margin desc_title">Pago anual</p>
+        </div>
+        <div class="checklist">
+
+            <p class="item_obj1 center_obj"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"><g><rect fill="none" id="canvas_background" height="17" width="17" y="-1" x="-1"></rect></g><g><polygon stroke="null" id="svg_3" fill="#00ff00" points="12.516685485839844,3.62435245513916 7.298151016235352,12.381834030151367 6.258443832397461,14.133319854736328 2.4833145141601562,7.164612770080566 3.9065895080566406,4.5373029708862305 6.319074630737305,8.99062728881836 7.298151016235352,7.3509321212768555 11.164154052734375,0.8666791915893555 "></polygon></g></svg>
+                Facturas ilimitadas
+            </p>
+            <p class="item_obj2 center_obj">
+                Cotizaciones / CRM
+            </p>
+            <p class="item_obj1 center_obj">
+                Cartera / Seguimientos de cobranza
+            </p>
+            <p class="item_obj2 center_obj">
+                Gastos / Cuentas por pagar
+            </p>
+            <p class="item_obj1 center_obj">
+                Siigo App
+            </p>
+            <p class="item_obj2 center_obj">
+                Contabilidad 
+            </p>
+            <p class="item_obj1 center_obj"></p>
+            <p class="item_obj2 center_obj"></p>
+
+        </div>
+        <div class="cost">
+            <p class="cost_desc">1 Usuario</p>
+            <a id="btnprofIndep" class="cta_a formtestab">Más información
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <!-- <p id="payProfIndep" class="cost_desc pagalo_cta">o págalo ahora</p> -->
+        </div>
+    </div>
+</div>
+<div class="pricing-item_v2 border_b">
+    <div style="text-align:left;" class="head_item"></div>
+    <div class="sombra">
+        <div class="title">
+            <p class="no_margin">EMPRENDEDOR</p>
+            <p class="no_margin cost_title">$135.000 <span class="sub_cost">/mes</span></p>
+            <p class="no_margin ">$1.620.000</p>
+            <p class="no_margin desc_title">Pago anual</p>
+        </div>
+        <div class="checklist">
+
+            <p class="item_obj1 center_obj"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"><g><rect fill="none" id="canvas_background" height="17" width="17" y="-1" x="-1"></rect></g><g><polygon stroke="null" id="svg_3" fill="#00ff00" points="12.516685485839844,3.62435245513916 7.298151016235352,12.381834030151367 6.258443832397461,14.133319854736328 2.4833145141601562,7.164612770080566 3.9065895080566406,4.5373029708862305 6.319074630737305,8.99062728881836 7.298151016235352,7.3509321212768555 11.164154052734375,0.8666791915893555 "></polygon></g></svg>
+                Facturas ilimitadas
+            </p>
+            <p class="item_obj2 center_obj">
+                Cotizaciones / CRM
+            </p>
+            <p class="item_obj1 center_obj">
+                Cartera / Seguimientos de cobranza
+            </p>
+            <p class="item_obj2 center_obj">
+                Gastos / Cuentas por pagar
+            </p>
+            <p class="item_obj1 center_obj">
+                Siigo App
+            </p>
+            <p class="item_obj2 center_obj">
+                Contabilidad 
+            </p>
+            <p class="item_obj1 center_obj">
+                Inventarios / Compras y costeo 
+            </p>
+            <p class="item_obj2 center_obj"></p>
+
+        </div>
+        <div class="cost">
+            <p class="cost_desc">3 Usuarios</p>
+            <a class="cta_a  formtestab" id="btnemprend">Más información
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <!-- <p id="payEmprendedor" class="cost_desc pagalo_cta">o págalo ahora</p> -->
+        </div>
+    </div>
+</div>
+<div class="pricing-item_v2 border_b" style="border-style: none solid solid none; border-radius: 0px 30px 0px 0px;">
+    <div style="text-align: right; border-style: none solid solid none; border-radius: 0px 30px 0px 0px;" class="head_item"></div>
+    <div class="sombra">
+        <div class="title">
+            <p class="no_margin">PREMIUM</p>
+            <p class="no_margin cost_title">$155.000 <span class="sub_cost">/mes</span></p>
+            <p class="no_margin ">$1.860.000</p>
+            <p class="no_margin desc_title">Pago anual</p>
+        </div>
+        <div class="checklist">
+
+            <p class="item_obj1 center_obj"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"><g><rect fill="none" id="canvas_background" height="17" width="17" y="-1" x="-1"></rect></g><g><polygon stroke="null" id="svg_3" fill="#00ff00" points="12.516685485839844,3.62435245513916 7.298151016235352,12.381834030151367 6.258443832397461,14.133319854736328 2.4833145141601562,7.164612770080566 3.9065895080566406,4.5373029708862305 6.319074630737305,8.99062728881836 7.298151016235352,7.3509321212768555 11.164154052734375,0.8666791915893555 "></polygon></g></svg>
+            Facturas ilimitadas
+            </p>
+            <p class="item_obj2 center_obj">
+                Cotizaciones / CRM
+            </p>
+            <p class="item_obj1 center_obj">
+                Cartera / Seguimientos de cobranza
+            </p>
+            <p class="item_obj2 center_obj">
+                Gastos / Cuentas por pagar
+            </p>
+            <p class="item_obj1 center_obj">
+                Siigo App
+            </p>
+            <p class="item_obj2 center_obj">
+                Contabilidad 
+            </p>
+            <p class="item_obj1 center_obj">
+                Inventarios / Compras y costeo 
+            </p>
+            <p class="item_obj2 center_obj">
+                Centro de Costos / Bodegas
+            </p>
+
+        </div>
+        <div class="cost">
+            <p class="cost_desc">5 Usuarios</p>
+            <a id="btnpremium" class="cta_a  formtestab pricesButtonNube">Más información
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <!-- <p id="payPremium" class="cost_desc pagalo_cta">o págalo ahora</p> -->
+        </div>
+    </div>
+</div>
+
+<div class="pricing-item_v2 border_b br_cont" style="margin-left: 10px;border-radius: 30px 30px 0px 0px;border-style: none none solid solid;border-color: #0067BC;">
+    <div style="text-align:right; border-radius: 30px 0px 0px 0px;" class="head_item_cont">SIIGO CO</div>
+    <div class="sombra">
+        <div class="title_cont">
+            <p class="no_margin desc_title">Siigo</p>
+            <p class="no_margin">CONTADOR</p>
+            <p class="no_margin cost_title">GRATIS</p>
+            <p class="no_margin desc_title">Sin limite de tiempo</p>
+        </div>
+        <div class="checklist">
+
+            <p class="item_obj1">&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+                    <g>
+                    <rect fill="none" id="canvas_background" height="15" width="15" y="-1" x="-1"></rect>
+                    </g>
+                    <g>
+                    <title>Layer 1</title>
+                    <g stroke="null" id="svg_1">
+                    <polygon stroke="null" id="svg_2" fill="#FFCD00" points="9.47338879108429,3.9683990478515625 6.5102540254592896,3.3260040283203125 5.0000001192092896,0.6299285292625427 5.0000001192092896,8.100692749023438 7.7646485567092896,9.370071411132812 7.4437257051467896,6.27691650390625 "></polygon>
+                    <polygon stroke="null" id="svg_3" fill="#FFDA44" points="3.489700436592102,3.3260040283203125 0.526611328125,3.9683990478515625 2.5562440156936646,6.27691650390625 2.2353516817092896,9.370071411132812 5.0000001192092896,8.100692749023438 5.0000001192092896,0.6299285292625427 "></polygon>
+                    </g>
+                </g></svg>
+                1 Empresa</p>
+            <p class="item_obj2">&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"><g><rect fill="none" id="canvas_background" height="17" width="17" y="-1" x="-1"></rect></g><g><polygon stroke="null" id="svg_3" fill="#00ff00" points="12.516685485839844,3.62435245513916 7.298151016235352,12.381834030151367 6.258443832397461,14.133319854736328 2.4833145141601562,7.164612770080566 3.9065895080566406,4.5373029708862305 6.319074630737305,8.99062728881836 7.298151016235352,7.3509321212768555 11.164154052734375,0.8666791915893555 "></polygon></g></svg>
+                Contabilidad</p>
+            <p class="item_obj1">&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"><g><rect fill="none" id="canvas_background" height="17" width="17" y="-1" x="-1"></rect></g><g><polygon stroke="null" id="svg_3" fill="#00ff00" points="12.516685485839844,3.62435245513916 7.298151016235352,12.381834030151367 6.258443832397461,14.133319854736328 2.4833145141601562,7.164612770080566 3.9065895080566406,4.5373029708862305 6.319074630737305,8.99062728881836 7.298151016235352,7.3509321212768555 11.164154052734375,0.8666791915893555 "></polygon></g></svg>
+                Impuestos</p>
+            <p class="item_obj2">&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"><g><rect fill="none" id="canvas_background" height="17" width="17" y="-1" x="-1"></rect></g><g><polygon stroke="null" id="svg_3" fill="#00ff00" points="12.516685485839844,3.62435245513916 7.298151016235352,12.381834030151367 6.258443832397461,14.133319854736328 2.4833145141601562,7.164612770080566 3.9065895080566406,4.5373029708862305 6.319074630737305,8.99062728881836 7.298151016235352,7.3509321212768555 11.164154052734375,0.8666791915893555 "></polygon></g></svg>
+                Estados financieros</p>
+            <p style="text-align: left;" class="item_obj1">&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"><g><rect fill="none" id="canvas_background" height="17" width="17" y="-1" x="-1"></rect></g><g><polygon stroke="null" id="svg_3" fill="#00ff00" points="12.516685485839844,3.62435245513916 7.298151016235352,12.381834030151367 6.258443832397461,14.133319854736328 2.4833145141601562,7.164612770080566 3.9065895080566406,4.5373029708862305 6.319074630737305,8.99062728881836 7.298151016235352,7.3509321212768555 11.164154052734375,0.8666791915893555 "></polygon></g></svg>
+                Membresía Club Siigo para &nbsp; contadores</p>
+            <p class="item_obj2"></p>
+            <p class="item_obj1"></p>
+            <p class="item_obj2 center_obj"></p>
+
+        </div>
+        <div class="cost">
+            <p class="cost_desc">1 Usuario</p>
+            <a class="cta_a " href="https://www.siigo.com/siigo-contador/?ppc=1&medio_virtual=Pagina%20Web&utm_medium=Pagina%20Web&utm_source=BotonPlanes%20TestABHome&utm_campaign=SiigoContador%20PlanesHomeA&utm_content=BotonSiigoContador" target="_blank">Empieza a usarlo
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="pricing-item_v2 br_cont">
+    <div style="border-radius: 0px 30px 0px 0px; text-align: left; margin-left: -4px;" class="head_item_cont">NTADOR</div>
+    <div style="border-color: #0067BC;" class="sombra borde_n_r">
+        <div class="title_cont">
+            <p class="no_margin desc_title">Siigo</p>
+            <p class="no_margin">CONTADOR ILIMITADO</p>
+            <p class="no_margin cost_title">$315.000</p>
+            <p class="no_margin desc_title">Pago anual</p>
+        </div>
+        <div class="checklist">
+
+            <p class="item_obj1">&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+                    <g>
+                    <rect fill="none" id="canvas_background" height="15" width="15" y="-1" x="-1"></rect>
+                    </g>
+                    <g>
+                    <title>Layer 1</title>
+                    <g stroke="null" id="svg_1">
+                    <polygon stroke="null" id="svg_2" fill="#FFCD00" points="9.47338879108429,3.9683990478515625 6.5102540254592896,3.3260040283203125 5.0000001192092896,0.6299285292625427 5.0000001192092896,8.100692749023438 7.7646485567092896,9.370071411132812 7.4437257051467896,6.27691650390625 "></polygon>
+                    <polygon stroke="null" id="svg_3" fill="#FFDA44" points="3.489700436592102,3.3260040283203125 0.526611328125,3.9683990478515625 2.5562440156936646,6.27691650390625 2.2353516817092896,9.370071411132812 5.0000001192092896,8.100692749023438 5.0000001192092896,0.6299285292625427 "></polygon>
+                    </g>
+                </g></svg>
+                 Empresas ilimitadas</p>
+            <p class="item_obj2">&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"><g><rect fill="none" id="canvas_background" height="17" width="17" y="-1" x="-1"></rect></g><g><polygon stroke="null" id="svg_3" fill="#00ff00" points="12.516685485839844,3.62435245513916 7.298151016235352,12.381834030151367 6.258443832397461,14.133319854736328 2.4833145141601562,7.164612770080566 3.9065895080566406,4.5373029708862305 6.319074630737305,8.99062728881836 7.298151016235352,7.3509321212768555 11.164154052734375,0.8666791915893555 "></polygon></g></svg>
+                Contabilidad</p>
+            <p class="item_obj1">&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"><g><rect fill="none" id="canvas_background" height="17" width="17" y="-1" x="-1"></rect></g><g><polygon stroke="null" id="svg_3" fill="#00ff00" points="12.516685485839844,3.62435245513916 7.298151016235352,12.381834030151367 6.258443832397461,14.133319854736328 2.4833145141601562,7.164612770080566 3.9065895080566406,4.5373029708862305 6.319074630737305,8.99062728881836 7.298151016235352,7.3509321212768555 11.164154052734375,0.8666791915893555 "></polygon></g></svg>
+                Impuestos</p>
+            <p class="item_obj2">&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"><g><rect fill="none" id="canvas_background" height="17" width="17" y="-1" x="-1"></rect></g><g><polygon stroke="null" id="svg_3" fill="#00ff00" points="12.516685485839844,3.62435245513916 7.298151016235352,12.381834030151367 6.258443832397461,14.133319854736328 2.4833145141601562,7.164612770080566 3.9065895080566406,4.5373029708862305 6.319074630737305,8.99062728881836 7.298151016235352,7.3509321212768555 11.164154052734375,0.8666791915893555 "></polygon></g></svg>
+                Estados financieros</p>
+            <p style="text-align: left;" class="item_obj1">&nbsp;
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"><g><rect fill="none" id="canvas_background" height="17" width="17" y="-1" x="-1"></rect></g><g><polygon stroke="null" id="svg_3" fill="#00ff00" points="12.516685485839844,3.62435245513916 7.298151016235352,12.381834030151367 6.258443832397461,14.133319854736328 2.4833145141601562,7.164612770080566 3.9065895080566406,4.5373029708862305 6.319074630737305,8.99062728881836 7.298151016235352,7.3509321212768555 11.164154052734375,0.8666791915893555 "></polygon></g></svg>
+                Membresía Club Siigo para &nbsp; contadores</p>
+            <p class="item_obj2"></p>
+            <p class="item_obj1"></p>
+            <p class="item_obj2 center_obj"></p>
+
+        </div>
+        <div class="cost">
+            <p class="cost_desc">Usuarios ilimitados</p>
+            <a class="cta_a formtestab" id="btncontpro">Más información
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <!-- <p id="payProfContIli" class="cost_desc pagalo_cta">o págalo ahora</p> -->
+        </div>
+    </div>
+</div>
+<p style="font-size: 13px;margin-left: 22px;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+        <g>
+        <rect fill="none" id="canvas_background" height="15" width="15" y="-1" x="-1"></rect>
+        </g>
+        <g>
+        <title>Layer 1</title>
+        <g stroke="null" id="svg_1">
+        <polygon stroke="null" id="svg_2" fill="#FFCD00" points="9.47338879108429,3.9683990478515625 6.5102540254592896,3.3260040283203125 5.0000001192092896,0.6299285292625427 5.0000001192092896,8.100692749023438 7.7646485567092896,9.370071411132812 7.4437257051467896,6.27691650390625 "></polygon>
+        <polygon stroke="null" id="svg_3" fill="#FFDA44" points="3.489700436592102,3.3260040283203125 0.526611328125,3.9683990478515625 2.5562440156936646,6.27691650390625 2.2353516817092896,9.370071411132812 5.0000001192092896,8.100692749023438 5.0000001192092896,0.6299285292625427 "></polygon>
+        </g>
+    </g></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15">
+        <g>
+        <rect fill="none" id="canvas_background" height="15" width="15" y="-1" x="-1"></rect>
+        </g>
+        <g>
+        <title>Layer 1</title>
+        <g stroke="null" id="svg_1">
+        <polygon stroke="null" id="svg_2" fill="#FFCD00" points="9.47338879108429,3.9683990478515625 6.5102540254592896,3.3260040283203125 5.0000001192092896,0.6299285292625427 5.0000001192092896,8.100692749023438 7.7646485567092896,9.370071411132812 7.4437257051467896,6.27691650390625 "></polygon>
+        <polygon stroke="null" id="svg_3" fill="#FFDA44" points="3.489700436592102,3.3260040283203125 0.526611328125,3.9683990478515625 2.5562440156936646,6.27691650390625 2.2353516817092896,9.370071411132812 5.0000001192092896,8.100692749023438 5.0000001192092896,0.6299285292625427 "></polygon>
+        </g>
+    </g></svg>
+    El plan de Facturación Electrónica puede ser complementado en cualquier momento con la compra de paquetes de facturas electrónicas adicionales</p>
+</div>
+<div class="fusion-clearfix"></div>
+</div>
+</div>

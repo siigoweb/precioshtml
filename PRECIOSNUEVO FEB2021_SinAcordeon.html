@@ -1,0 +1,478 @@
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+.cont_prn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cont_tabla{
+    border: 3px solid #00244C;
+    background-color: #fff;
+    border-radius: 35px;
+    max-width: 250px;
+    min-width: 250px;
+    text-align: center;
+    height: 417px;
+    margin: 10px !important;
+}
+.cont_tabla_FE{
+    border: 3px solid #00244C;
+    background-color: #fff;
+    border-radius: 35px;
+    max-width: 250px;
+    min-width: 250px;
+    text-align: center;
+    height: 280px;
+    margin: 10px !important;
+}
+.cont_tabla_cont{
+  height: 382px !important;
+}
+.cont_titulo{
+    height: 143px;
+    border-radius: 30px 30px 0px 0px;
+    border: none;
+    padding-top: 10px;
+}
+
+.back_oscuro_azul{
+background-image: url(https://www.siigo.com/wp-content/uploads/2021/02/AzulOscPreciosHome.png);
+}
+
+.back_claro_azul{
+    background-image: url(https://www.siigo.com/wp-content/uploads/2021/02/AzulPreciosHome.png);
+}
+
+.back_verde_azul{
+    background-image: url(https://www.siigo.com/wp-content/uploads/2021/02/VerdePreciosHome.png);
+}
+
+.back_naranja_azul{
+    background-image: url(https://www.siigo.com/wp-content/uploads/2021/02/NaranjaPreciosHome.png);
+}
+
+
+.titulo{
+    color:#fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    
+}
+.precios{
+    color:#fff;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    padding: 0px;
+    margin-top: 17px !important;
+}
+.sub_precio{
+    color:#fff;
+    font-family: Muli;
+    font-size: 12px;
+    padding: 0px !important; 
+}
+.items{
+    text-align: start;
+    padding: 5px !important;
+    font-family: Muli;
+    font-size: 12px;
+}
+.cont_items{
+    padding-top: 0px !important;
+    margin-top: -25px !important;
+}
+.btn{
+    color: #fff;
+    background: #00AAFF 0% 0% no-repeat padding-box;
+    border: 2px solid #FFFFFF;
+    border-radius: 27px;
+    padding: 7px 20px 7px 20px;
+    font-family: Muli;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn:hover{
+    color: #fff !important;
+    background: #0088cc 0% 0% no-repeat padding-box;
+}
+.cont_btn{
+    position: relative;
+}
+
+.btn_naranja{
+    background-color: #ffa532 !important;
+}
+.btn_naranja:hover{
+    background-color: #ffbb00 !important;
+    color:#fff !important;
+}
+.btn_verde{
+    background-color: #7ac23a !important;
+}
+.btn_verde:hover{
+    background-color: #69aa29!important;
+    color:#fff !important;
+}
+.etiqueta_usuario{
+    background: #0090FF 0% 0% no-repeat padding-box;
+    color: #fff;
+    width: 107px;
+    padding: 10px;
+    position: relative;
+    top: -18px;
+    left: -12px;
+    font-family: Muli;
+}
+.no_mrg{
+    margin: 6px !important;
+}
+.ancho_sitio{
+  width: 90%;
+  margin:auto;
+}
+
+.tituloplanes{
+    font-size: 30px !important;
+    font-family: 'Nunito Sans' !important;
+    font-weight: 800 !important;
+    text-align: center !important;
+    color: #00aaff;
+}
+</style>
+
+<h1 class="tituloplanes">Planes Siigo Nube</h1>
+
+<div class="cont_prn">
+    <div class="cont_tabla">
+        <div class="cont_titulo back_claro_azul">
+            <div class="titulo" style="margin-top: 10px;">
+                LITE
+            </div>
+            <div class="precios">
+                $65.000 /<span>mes</span>
+            </div>
+            <div class="sub_precio">
+                $780.000 pago anual
+            </div>
+        </div>
+        <div class="etiqueta_usuario">
+            • 1 Usuario
+        </div>
+        <div class="cont_items">
+            <div class="items">
+                
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Facturas ilimitadas</p>
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Cotizaciones / CRM</p>
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Cartera / Seguimientos de cobranza</p>
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Gastos / Cuentas por pagar</p>
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Siigo App</p> 
+                <p class="no_mrg"></p>
+                       
+                
+            </div>
+            <div class="cont_btn" style="top:81px;">
+                <a id="btn_lite" class="btn cta_a formtestab pum-trigger">
+                    Empieza ahora
+                </a>
+            </div>
+        </div>
+    
+    </div>
+    <div class="cont_tabla">
+        <div class="cont_titulo back_claro_azul">
+            <div class="titulo">
+                PROFESIONAL
+            </div>
+            <div class="titulo">
+                INDEPENDIENTE
+            </div>
+            <div class="precios" style="margin-top: 6px !important;">
+                $105.000 /<span>mes</span>
+            </div>
+            <div class="sub_precio">
+                $1.260.000 pago anual
+            </div>
+        </div>
+        <div class="etiqueta_usuario">
+            • 1 Usuario
+        </div>
+        <div class="cont_items">
+            <div class="items">
+                
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Facturas ilimitadas</p>
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Cotizaciones / CRM</p>
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Cartera / Seguimientos de cobranza</p>
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Gastos / Cuentas por pagar</p>
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Siigo App</p> 
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Contabilidad</p>
+                <p class="no_mrg"></p>
+                
+                
+            </div>
+            <div class="cont_btn" style="top:58px;">
+                <a id="btn_profe" class="btn cta_a formtestab pum-trigger">
+                    Empieza ahora
+                </a>
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="cont_tabla">
+        <div class="cont_titulo back_oscuro_azul">
+            <div class="titulo" style="margin-top: 10px;">
+                EMPRENDEDOR
+            </div>
+            <div class="precios">
+                $135.000 /<span>mes</span>
+            </div>
+            <div class="sub_precio">
+                $1.620.000 pago anual
+            </div>
+        </div>
+        <div class="etiqueta_usuario">
+            • 3 Usuarios
+        </div>
+        <div class="cont_items">
+            <div class="items">
+                
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Facturas ilimitadas</p>
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Cotizaciones / CRM</p>
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Cartera / Seguimientos de cobranza</p>
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Gastos / Cuentas por pagar</p>
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Siigo App</p> 
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Contabilidad</p>
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Inventarios / Compras y costeo</p>
+                
+            </div>
+            <div class="cont_btn" style="top:34px;">
+                <a id="btn_empre" class="btn cta_a formtestab pum-trigger">
+                    Empieza ahora
+                </a>
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="cont_tabla">
+        <div class="cont_titulo back_oscuro_azul">
+            <div class="titulo" style="margin-top: 10px;">
+                PREMIUM
+            </div>
+            <div class="precios">
+                $155.000 /<span>mes</span>
+            </div>
+            <div class="sub_precio">
+                $1.860.000 pago anual
+            </div>
+        </div>
+        <div class="etiqueta_usuario">
+            • 5 Usuarios
+        </div>
+        <div class="cont_items">
+            <div class="items">
+                
+                 <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Facturas ilimitadas</p>
+                 <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Cotizaciones / CRM</p>
+                 <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Cartera / Seguimientos de cobranza</p>
+                 <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Gastos / Cuentas por pagar</p>
+                 <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Siigo App</p> 
+                 <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Contabilidad</p>
+                 <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Inventarios / Compras y costeo</p>
+                 <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Centro de Costos / Bodegas</p>
+                 
+            </div>
+            <div class="cont_btn" style="top:10px;">
+                <a id="btn_premi" class="btn cta_a formtestab pum-trigger">
+                    Empieza ahora
+                </a>
+            </div>
+        </div>
+    
+    </div>
+</div>
+
+<h1 class="tituloplanes" style="color:#ffa532;">Planes Facturción Electrónica</h1>
+
+<div class="cont_prn">
+    <div class="cont_tabla_FE">
+        <div class="cont_titulo back_naranja_azul">
+            <div class="titulo"style="margin-top: 15px !important;">
+               FACTURACIÓN ELECTRÓNICA
+            </div>
+            <div class="titulo">
+                
+            </div>
+            <div class="precios" style="margin-top: 25px !important;">
+               GRATIS
+            </div>
+            <div class="sub_precio">
+               
+            </div>
+        </div>
+        <div class="etiqueta_usuario">
+            • 1 Usuario
+        </div>
+        <div class="cont_items">
+            <div class="items">
+                
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>5 Facturas anuales</p>                    
+                
+            </div>
+            <div class="cont_btn" style="top:41px;">
+                <a id="btn_fe1" href="https://www.siigo.com/facturacion-electronica/?ppc=1&medio_virtual=Pagina%20Web&utm_medium=Pagina%20Web&utm_source=BotonPlanes%20TestABHome&utm_campaign=FacturacionElectronica%20PlanesHomeA&utm_content=BotonFacturacionElectronica" target="_blank" class="btn btn_naranja">
+                    Empieza ahora
+                </a>
+            </div>
+        </div>
+    
+    </div>
+   
+    <div class="cont_tabla_FE">
+        <div class="cont_titulo back_naranja_azul">
+            <div class="titulo">
+                FACTURACIÓN
+            </div>
+            <div class="titulo">
+                ELECTRÓNICA
+            </div>
+            <div class="precios" style="margin-top: 15px !important;">
+                $15.000 /<span>mes</span>
+            </div>
+            <div class="sub_precio">
+                $180.000 pago anual
+            </div>
+        </div>
+        <div class="etiqueta_usuario">
+            • 1 Usuario
+        </div>
+        <div class="cont_items">
+            <div class="items">
+                
+                 <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>80 Facturas anuales</p>
+                 
+            </div>
+            <div class="cont_btn" style="top:41px;">
+                <a id="btn_fe2" class="btn btn_naranja cta_a formtestab pum-trigger">
+                    Empieza ahora
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cont_tabla_FE">
+        <div class="cont_titulo back_naranja_azul">
+            <div class="titulo">
+                FACTURACIÓN
+            </div>
+            <div class="titulo">
+                ELECTRÓNICA
+            </div>
+            <div class="precios" style="margin-top: 15px !important;">
+                $29.000 /<span>mes</span>
+            </div>
+            <div class="sub_precio">
+                $350.000 pago anual
+            </div>
+        </div>
+        <div class="etiqueta_usuario">
+            • 1 Usuario
+        </div>
+        <div class="cont_items">
+            <div class="items">
+                
+                 <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>260 Facturas anuales</p>
+                 
+            </div>
+            <div class="cont_btn" style="top:41px;">
+                <a id="btn_fe3" class="btn btn_naranja cta_a formtestab pum-trigger">
+                    Empieza ahora
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<h1 class="tituloplanes" style="color:#7ac23a;">Planes Siigo Contador</h1>
+
+<div class="cont_prn">
+      
+    <div class="cont_tabla cont_tabla_cont">
+        <div class="cont_titulo back_verde_azul">
+            <div class="titulo">
+                SIIGO CONTADOR
+            </div>
+            <div class="titulo">
+
+            </div>
+            <div class="precios" style="margin-top: 15px !important;">
+               GRATIS
+            </div>
+            <div class="sub_precio">
+                Sin limite de tiempo
+            </div>
+        </div>
+        <div class="etiqueta_usuario" style="width: 177px;">
+            • 1 Empresa
+        </div>
+        <div class="cont_items">
+            <div class="items">
+                
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Contabilidad</p> 
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Impuestos</p> 
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Estados financieros</p> 
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Membresía Club Siigo para contadores</p> 
+                 
+            </div>
+            <div class="cont_btn" style="top:53px;">
+                <a id="btn_cont2" href="https://www.siigo.com/siigo-contador/?ppc=1&medio_virtual=Pagina%20Web&utm_medium=Pagina%20Web&utm_source=BotonPlanes%20TestABHome&utm_campaign=SiigoContador%20PlanesHomeA&utm_content=BotonSiigoContador" target="_blank" class="btn btn_verde">
+                    Empieza ahora
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cont_tabla cont_tabla_cont">
+        <div class="cont_titulo back_verde_azul">
+            <div class="titulo">
+                CONTADOR
+            </div>
+            <div class="titulo">
+                ILIMITADO
+            </div>
+            <div class="precios" style="margin-top: 7px !important;">
+                $300.000
+            </div>
+            <div class="sub_precio">
+                pago anual
+            </div>
+        </div>
+        <div class="etiqueta_usuario" style="width: 177px;">
+            • Usuarios Ilimitados
+        </div>
+        <div class="cont_items">
+            <div class="items">
+                
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Contabilidad</p> 
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Impuestos</p> 
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Estados financieros</p> 
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Membresía Club Siigo para contadores</p> 
+                <p class="no_mrg"><span><img src="https://www.siigo.com/wp-content/uploads/2021/02/checkgris_precios.png" alt="" style="width: 10px;margin: 2px;"></span>Empresas Ilimitadas</p> 
+                 
+            </div>
+            <div class="cont_btn" style="top:29px;">
+                <a id="btn_cont2" class="btn btn_verde cta_a formtestab pum-trigger">
+                    Empieza ahora
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
